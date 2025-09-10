@@ -1,0 +1,10 @@
+modules:
+  - auth
+  - user
+  - order
+
+configs:
+  user:
+    greeting: "${USER_GREETING:Hello, Default User!}"
+  order:
+    dsn: "${DB_DSN:mysql://root:123@tcp(localhost:3306)/shop}"
